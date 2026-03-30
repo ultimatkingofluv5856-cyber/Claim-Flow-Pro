@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">IPI Claims</string>
+    <string name="title_activity_main">IPI Claims</string>
+    <string name="package_name">com.claimflow.pro</string>
+    <string name="custom_url_scheme">com.claimflow.pro</string>
+</resources>

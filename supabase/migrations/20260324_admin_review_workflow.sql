@@ -1,0 +1,10 @@
+ALTER TABLE public.claims
+  ADD COLUMN IF NOT EXISTS admin_approval_status TEXT DEFAULT 'Pending',
+  ADD COLUMN IF NOT EXISTS admin_approved_total NUMERIC NOT NULL DEFAULT 0,
+  ADD COLUMN IF NOT EXISTS admin_deduction_total NUMERIC NOT NULL DEFAULT 0,
+  ADD COLUMN IF NOT EXISTS admin_description TEXT;
+
+ALTER TABLE public.expense_items
+  ADD COLUMN IF NOT EXISTS approved_amount NUMERIC NOT NULL DEFAULT 0,
+  ADD COLUMN IF NOT EXISTS deduction_amount NUMERIC NOT NULL DEFAULT 0,
+  ADD COLUMN IF NOT EXISTS approval_remarks TEXT;
